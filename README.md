@@ -1,78 +1,136 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 450px)" href="md450.css">
+    <link rel="stylesheet" media="screen and (max-width: 750px)" href="md750.css">
+    <link rel="stylesheet" media="screen and (max-width: 950px)" href="md950.css">
+    <link rel="stylesheet" media="screen and (min-width: 951px)" href="min951.css">
+    <title>Foodie</title>
 </head>
 <body>
+    <header>
+        <p>Foodie</p>
+        <div class="fnav" onclick="toggle()"></div> 
+        <ul class="nav">
+            <li><a href="#banner">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#menu">MENU</a></li>
+            <li><a href="#contact">CONNECT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </header>
+    <section class ="banner" id="banner">
+        <div class="quote">
+            <h2>Nothing brings people together like <span>Good Food</span></h2><br>
+            <a href="#menu" class="btn" style="border:2px solid rgb(158, 152, 152); border-radius: 40px; background-color: rgba(97, 43, 43, 0); color: rgb(146, 224, 127)">Our Menu</a>
+        </div>
+        <div class="main"><figure>
+            <span><img src="https://www.fohlio.com/blog/wp-content/uploads/2017/07/The-Psychology-of-Restaurant-Interior-Design-Part-1-Color-Fohlio-yellow.jpg"></span>
+            <span><img src="https://wallpapercave.com/wp/wp1874156.jpg"></span>
+            <span><img src="https://i.pinimg.com/originals/da/00/49/da0049fd6948a0a7b84060fc65cd5ec3.jpg"></span>
+            <span><img src="https://images.pexels.com/photos/6267/menu-restaurant-vintage-table.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"></span>
+            <span><img src="https://wallpapercave.com/wp/wp1874165.jpg"></span>
+            <span><img src="https://media.architecturaldigest.in/wp-content/uploads/2019/07/Ishaara-Lower-Parel-Mumbai-restaurant-1366x768.jpg"></span>
+            <span><img src="https://media.architecturaldigest.in/wp-content/uploads/2019/02/Talli-Turmeric-restaurant-Worli-Mumbai.jpg"></span>
+            <span><img src="https://www.wallpapertip.com/wmimgs/50-504377_366291-title-man-made-restaurant-wallpaper-high-resolution.jpg"></span>
+        </figure>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col50">
+                <h2>About US</h2>
+                <p>A restaurant, or an eatery, is a business that prepares and serves food and drinks to customers. 
+                    Meals are generally served and eaten on the premises, but many restaurants also offer take-out and food delivery services. 
+                    Restaurants vary greatly in appearance and offerings, including a wide variety of cuisines and service models ranging 
+                    from inexpensive fast food restaurants and cafeterias, to mid-priced family restaurants, to high-priced luxury 
+                    establishments. A restaurant, or an eatery, is a business that prepares and serves food and drinks to customers. 
+                    Meals are generally served and eaten on the premises, but many restaurants also offer take-out and food delivery services. 
+                    </p>
+            </div>
+            <div class="col50">
+                <div class="img"><img src="https://foodtank.com/wp-content/uploads/2017/01/Food-Tank-Restaurant-Innovators-770x463.jpg"></div>
+            </div>
+        </div>
+    </section>
+    <section class="menu" id="menu">
+        <div class="title">
+            <h2>Our MENU</h2>
+            <p>We offer a wide variety of dishes.</p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="https://hdwallpaperim.com/wp-content/uploads/2017/08/27/139048-desserts.jpg">
+                </div>
+                <div class="text">
+                    <h3>Desserts</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_-_1200x900%2Fpublic%2Fupdated_main_images%2F1008w-baja-chicken-ensalada-x.jpg%3Fitok%3DNIwcFQ4-">
+                </div>
+                <div class="text">
+                    <h3>Salads</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="https://picturetherecipe.com/wp-content/uploads/2018/05/Spicy-Pork-Vindaloo-PictureTheRecipe-Featured-395x500.jpg">
+                </div>
+                <div class="text">
+                    <h3>Main course</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="https://images7.alphacoders.com/343/thumb-1920-343425.jpg">
+                </div>
+                <div class="text">
+                    <h3>Soup</h3>
+                </div>
+            </div>
+        </div>
+        <div class="title">
+            <a href="#" class="btn">Click to view full menu</a>
+        </div>
+    </section>
+    <footer class="contact" id="contact">
+        <div class="c2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62189.19738070161!2d77.57601737910157!3d13.046819100000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae173340c3be35%3A0x19af15ffe521aced!2sFlyDining-%20Adventure%20Dining%20Experience!5e0!3m2!1sen!2sin!4v1608309126660!5m2!1sen!2sin" width="300px" height="300px" frameborder="0" style="border-radius: 10px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+        <div class="c1">
+        <i class='fab fa-facebook-f'></i><i class='fab fa-instagram'></i><i class='fab fa-linkedin-in'></i><i class='fab fa-google-plus-g'></i>
+        <div class="name"><p>Foodie</p></div>
+        <div class="copy"><i class='far fa-copyright'></i>Copyright 2020-2050. All rights reserved.</div>
+    </div>
+        
+        
+    </footer>
+    <script>
+        window.addEventListener('scroll',function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky",window.scrollY > 0);/*a new class called sticky is added to the header on scroll, the stylings are in the .css file
+            //Toggles between a class name for an element.
+            The first parameter removes the specified class from an element, and returns false.
+            If the class does not exist, it is added to the element, and the return value is true.
+            The optional second parameter is a Boolean value that forces the class to be added or removed, regardless of whether or not it already existed. For example:
+            Remove a class: element.classList.toggle("classToRemove", false);
+            Add a class: element.classList.toggle("classToAdd", true);*/
+        })
 
-<h3>Contact Foodie</h3>
-
-<div class="container">
-  <form action="/action_page.php">
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="cuisine">Favourite Cuisine</label>
-    <select id="cuisine" name="cuisine">
-      <option value="indian">Indian</option>
-      <option value="italian">Italian</option>
-      <option value="Mexican">Mexican</option>
-      <option value="Chinese">Chinese</option>
-      <option value="Thai">Thai</option>
-    </select>
-
-    <label for=visit>How often do you visit Foodie?</label><br><br>
-    <input type="radio" id="v1" value="once in a week" name="v">
-    <label for="v1">Once in a week</label><br>
-    <input type="radio" id="v2" value="Once in a month" name="v">
-    <label for="v2">Once in a month</label><br>  
-    <input type="radio" id="v3" value="More than once in a month" name="v">
-    <label for="v3">More than once in a month</label><br><br>
-    
-
-    <label for="subject">Ask me anything!!</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-  </form>
-</div>
-
+        function toggle(){//function used when the screen size is minimized....the nav bar occurs on a click of the 3lined image.
+            const tog = document.getElementsByClassName("fnav")[0];
+            const menu = document.getElementsByClassName("nav")[0];
+            tog.classList.toggle("active");//3lined image and cross mark image toggles b/w each other on click
+            menu.classList.toggle("active"); //controls the height n width of the nav bar
+        }   
+    </script>
 </body>
 </html>
