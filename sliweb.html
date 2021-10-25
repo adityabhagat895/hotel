@@ -12,7 +12,6 @@
     <link rel="stylesheet" media="screen and (max-width: 750px)" href="md750.css">
     <link rel="stylesheet" media="screen and (max-width: 950px)" href="md950.css">
     <link rel="stylesheet" media="screen and (min-width: 951px)" href="min951.css">
-    <link rel="icon" type="image/x-icon" href="hotellogo.png" />
     <title>Foodie</title>
 </head>
 <body>
@@ -114,6 +113,24 @@
         
         
     </footer>
-    
+    <script>
+        window.addEventListener('scroll',function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky",window.scrollY > 0);/*a new class called sticky is added to the header on scroll, the stylings are in the .css file
+            //Toggles between a class name for an element.
+            The first parameter removes the specified class from an element, and returns false.
+            If the class does not exist, it is added to the element, and the return value is true.
+            The optional second parameter is a Boolean value that forces the class to be added or removed, regardless of whether or not it already existed. For example:
+            Remove a class: element.classList.toggle("classToRemove", false);
+            Add a class: element.classList.toggle("classToAdd", true);*/
+        })
+
+        function toggle(){//function used when the screen size is minimized....the nav bar occurs on a click of the 3lined image.
+            const tog = document.getElementsByClassName("fnav")[0];
+            const menu = document.getElementsByClassName("nav")[0];
+            tog.classList.toggle("active");//3lined image and cross mark image toggles b/w each other on click
+            menu.classList.toggle("active"); //controls the height n width of the nav bar
+        }   
+    </script>
 </body>
 </html>
